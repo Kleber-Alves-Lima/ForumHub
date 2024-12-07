@@ -23,8 +23,8 @@ Com endpoints organizados e funcionalidades práticas, o FórumHub é ideal para
 
 - *A API disponibiliza os seguintes recursos:*<br>
 
-  - *Autenticação*
-   Post / Usuarios<br>
+  - *Autenticação*<br>
+    Post / Usuarios<br>
     Cria um novo usúario<br>
 
   -*POST /login* <br>
@@ -36,7 +36,7 @@ Com endpoints organizados e funcionalidades práticas, o FórumHub é ideal para
 
   GET /topicos<br>
     Lista todos os tópicos disponíveis.<br>
-    Obs (neste topico, use este formato no corpo da requisição<br>
+    Obs (neste topico, use este formato no corpo da requisição ) <br>
            {<br>
             "status": "PENDENTE",<br>
             "page": 0,<br>
@@ -44,13 +44,13 @@ Com endpoints organizados e funcionalidades práticas, o FórumHub é ideal para
             "sort": ["id"]<br>
           }<br>
 
-  GET /topicos/{id}<br>
+  GET /topicos/id<br>
     Retorna os detalhes de um tópico específico pelo ID e suas respostas cadastradas <br>
 
-  PUT /topicos/{id}<br>
+  PUT /topicos/id<br>
     Atualiza as informações de um tópico existente.<br>
 
-  DELETE /topicos/{id}<br>
+  DELETE /topicos/id<br>
     Marca um tópico e suas respostas associadas como inativos.<br>
 
   Post /Respostas<br>
@@ -61,8 +61,10 @@ A documentação detalhada dos endpoints está disponível nos seguintes URLs:<b
 Swagger UI: http://localhost:8080/swagger-ui.html<br>
 API Docs (OpenAPI): http://localhost:8080/v3/api-docs/<br>
 Esses pontos estão configurados para acesso público, permitindo que qualquer usuário visualize a estrutura e utilize as ferramentas de teste da API.<br>
+
 <h1 align="center"> Estrutura Principal </h1><br>
--*Controle de Segurança<br>*
+
+-Controle de Segurança<br>
 
 Utiliza filtros personalizados para autenticação via JWT, garantindo acesso seguro aos endpoints.
 Configuração de segurança que desabilita CSRF e aplica autenticação baseada em tokens.
@@ -79,7 +81,7 @@ Autenticação JWT
 Geração de tokens com validade de 2 horas, utilizando a biblioteca java-jwt.
 Validação dos tokens para identificar e autenticar o usuário em cada requisição.
 
-- *Requisitos*<br>
+- Requisitos<br>
   Java 17+
   Spring Boot 3.0+
   MySQL ou outro banco de dados compatível.

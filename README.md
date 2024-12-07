@@ -12,8 +12,8 @@ API REST - Fórum de Discussões
 
 - * Sistema de uma API completa para gerenciamento de tópicos e respostas.
 
-Este projeto FórumHub  foi desenvolvido como parte do **Challenge Back End**,uma iniciativa da [**Alura**](https://www.alura.com.br/) em parceria com o programa [**Oracle Next Education**](https://www.oracle.com/br/education/oracle-next-education/). O sistema foi projetado para Facilitar o gerenciamento de discussões e soluções. povoando o banco de dados   com conteúdo relevante. 
-O desafio proposto pelo curso de desenvolvimento de sistemas visou não apenas o domínio técnico, mas também a compreensão de conceitos fundamentais . Este projeto reflete o comprometimento com a inovação e a excelência técnica, aplicando conhecimentos adquiridos ao longo do curso . 
+Este projeto FórumHub  foi desenvolvido como parte do **Challenge Back End**,uma iniciativa da [**Alura**](https://www.alura.com.br/) em parceria com o programa [**Oracle Next Education**](https://www.oracle.com/br/education/oracle-next-education/). O sistema foi projetado para Facilitar o gerenciamento de discussões e soluções. povoando o banco de dados   com conteúdo relevante. <br>
+O desafio proposto pelo curso de desenvolvimento de sistemas visou não apenas o domínio técnico, mas também a compreensão de conceitos fundamentais . Este projeto reflete o comprometimento com a inovação e a excelência técnica, aplicando conhecimentos adquiridos ao longo do curso . <br>
 
 <h1 align="center"> Funcionalidades </h1><br>
 

@@ -24,7 +24,7 @@ Com endpoints organizados e funcionalidades práticas, o FórumHub é ideal para
 - *A API disponibiliza os seguintes recursos:*<br>
 
   *Autenticação*<br>
-    Post / Usuarios<br>
+    POST / Usuarios<br>
     Cria um novo usúario<br>
 
   -*POST /login* <br>
@@ -82,15 +82,15 @@ Geração de tokens com validade de 2 horas, utilizando a biblioteca java-jwt.
 Validação dos tokens para identificar e autenticar o usuário em cada requisição.
 
 - Requisitos<br>
-  Java 17+
-  Spring Boot 3.0+
-  MySQL ou outro banco de dados compatível.
-  Dependências Maven:
-  spring-boot-starter-data-jpa
-  spring-boot-starter-web
-  spring-boot-starter-security
-  java-jwt
-  spring-boot-starter-validation
+  Java 17+<br>
+  Spring Boot 3.0+<br>
+  MySQL ou outro banco de dados compatível.<br>
+  Dependências Maven:<br>
+  spring-boot-starter-data-jpa<br>
+  spring-boot-starter-web<br>
+  spring-boot-starter-security<br>
+  java-jwt<br>
+  spring-boot-starter-validation<br>
 
 
 <h1 align="center"> Parceiros Educacionais</h1>

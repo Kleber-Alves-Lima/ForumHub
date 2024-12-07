@@ -23,39 +23,48 @@ Com endpoints organizados e funcionalidades práticas, o FórumHub é ideal para
 
 - *A API disponibiliza os seguintes recursos:*<br>
 
-Autenticação
+  - *Autenticação*
+   Post / Usuarios<br>
+    Cria um novo usúario<br>
 
-POST /login
-Realiza a autenticação do usuário e retorna um token JWT para acesso aos recursos protegidos.
+  -*POST /login* <br>
+    Realiza a autenticação do usuário e retorna um token JWT para acesso aos recursos protegidos.<br>
 
-Tópicos
-POST /topicos
-Cria um novo tópico de discussão.
+  -*Tópicos*
+  POST /topicos
+    Cria um novo tópico de discussão.
 
-GET /topicos
-Lista todos os tópicos disponíveis.
+  GET /topicos<br>
+    Lista todos os tópicos disponíveis.<br>
+    Obs (neste topico, use este formato no corpo da requisição<br>
+           {<br>
+            "status": "PENDENTE",<br>
+            "page": 0,<br>
+            "size": 5,<br>
+            "sort": ["id"]<br>
+          }<br>
 
-GET /topicos/{id}
-Retorna os detalhes de um tópico específico pelo ID.
+  GET /topicos/{id}<br>
+    Retorna os detalhes de um tópico específico pelo ID e suas respostas cadastradas <br>
 
-PUT /topicos/{id}
-Atualiza as informações de um tópico existente.
+  PUT /topicos/{id}<br>
+    Atualiza as informações de um tópico existente.<br>
 
-DELETE /topicos/{id}
-Marca um tópico e suas respostas associadas como inativos.
+  DELETE /topicos/{id}<br>
+    Marca um tópico e suas respostas associadas como inativos.<br>
 
-Respostas
-Endpoints dedicados para cadastrar resposta de um determinado tópico.
+  Post /Respostas<br>
+  Endpoints dedicados para cadastrar resposta de um determinado tópico.<br>
 
-Documentação da API
-A documentação detalhada dos endpoints está disponível nos seguintes URLs:
-Swagger UI: http://localhost:8080/swagger-ui.html
-API Docs (OpenAPI): http://localhost:8080/v3/api-docs/
-Esses pontos estão configurados para acesso público, permitindo que qualquer usuário visualize a estrutura e utilize as ferramentas de teste da API.
+Documentação da API<br>
+A documentação detalhada dos endpoints está disponível nos seguintes URLs:<br>
+Swagger UI: http://localhost:8080/swagger-ui.html<br>
+API Docs (OpenAPI): http://localhost:8080/v3/api-docs/<br>
+Esses pontos estão configurados para acesso público, permitindo que qualquer usuário visualize a estrutura e utilize as ferramentas de teste da API.<br>
 
 - *Estrutura Principal*<br>
 
-Controle de Segurança
+*Controle de Segurança<br>*
 
 Utiliza filtros personalizados para autenticação via JWT, garantindo acesso seguro aos endpoints.
 Configuração de segurança que desabilita CSRF e aplica autenticação baseada em tokens.

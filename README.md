@@ -4,7 +4,7 @@ API REST - Fórum de Discussões
     <br />
     <br />
     <a href="Cadeado">
-      <img src="src/main/java/br/com/alura/Livros/Assets/ImagemSistema.png" alt="Imagem Ilustrando o Back-Endo do Sistema"  width="300" height="200">
+      <img src="src/main/java/br/com/alura/ForumHub/Domain/Assets/ForumHub.webp" alt="Imagem Ilustrando o Back-Endo do Sistema"  width="300" height="200">
      </a>
   </h1>
 </div>
@@ -97,9 +97,9 @@ Validação dos tokens para identificar e autenticar o usuário em cada requisi�
 
 Este curso é oferecido por:   
  
-- <img class="imagem" src="src/main/java/br/com/alura/Livros/Assets/Logo Alura.png" alt="logo Alura" >          **Alura**: Reconhecida instituição de ensino em tecnologia, especializada em cursos de desenvolvimento de software e outras áreas tecnológicas.
+- <img class="imagem" src="src/main/java/br/com/alura/ForumHub/Domain/Assets/Logo Alura.png" alt="logo Alura" >          **Alura**: Reconhecida instituição de ensino em tecnologia, especializada em cursos de desenvolvimento de software e outras áreas tecnológicas.
   
-- <img class="imagem" src="src/main/java/br/com/alura/Livros/Assets/logo one.webp"  alt="logo Alura" >  **Oracle Next Education**: Programa da Oracle que visa capacitar profissionais para o mercado de tecnologia com treinamento avançado e recursos educacionais.
+- <img class="imagem" src="src/main/java/br/com/alura/ForumHub/Domain/Assets/logo one.webp"  alt="logo Alura" >  **Oracle Next Education**: Programa da Oracle que visa capacitar profissionais para o mercado de tecnologia com treinamento avançado e recursos educacionais.
 
 Juntos, esses parceiros proporcionam um curso abrangente e atualizado, preparando os alunos para se destacarem na área de desenvolvimento e tecnologia.
 

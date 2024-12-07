@@ -61,10 +61,8 @@ A documentação detalhada dos endpoints está disponível nos seguintes URLs:<b
 Swagger UI: http://localhost:8080/swagger-ui.html<br>
 API Docs (OpenAPI): http://localhost:8080/v3/api-docs/<br>
 Esses pontos estão configurados para acesso público, permitindo que qualquer usuário visualize a estrutura e utilize as ferramentas de teste da API.<br>
-
-- *Estrutura Principal*<br>
-
-*Controle de Segurança<br>*
+<h1 align="center"> Estrutura Principal </h1><br>
+-*Controle de Segurança<br>*
 
 Utiliza filtros personalizados para autenticação via JWT, garantindo acesso seguro aos endpoints.
 Configuração de segurança que desabilita CSRF e aplica autenticação baseada em tokens.

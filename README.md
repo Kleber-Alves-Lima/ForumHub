@@ -48,53 +48,41 @@ Marca um tópico e suas respostas associadas como inativos.
 Respostas
 Endpoints dedicados para cadastrar resposta de um determinado tópico.
 
-
-
-<h3>Menu de Opções</h3>
-
-***************************************************<br>
-1  - Buscar Livro pelo título<br>
-2  - Listar livros registrados<br>
-3  - Listar autores registrados<br>
-4  - Listar autores vivos em um determinado ano<br>
-5  - Listar livros em um determinado idíoma<br>
-0 - Sair<br>
-
-***************************************************<br>
-
-Opção .: 2<br>
-
---------------------- LIVRO ---------------------<br>
-Título              : Emma<br>
-Autor               : Austen, Jane<br>
-idioma              : en<br>
-Número de downloads : 5798<br>
---------------------------------------------------<br>
-
-Opção .: 3<br>
-Austen, Jane<br>
-Machado de Assis<br>
-Melville, Herman<br>
-Kafka, Franz<br>
-Homer<br>
-Cervantes Saavedra, Miguel de<br>
+Documentação da API
+A documentação detalhada dos endpoints está disponível nos seguintes URLs:
+Swagger UI: http://localhost:8080/swagger-ui.html
+API Docs (OpenAPI): http://localhost:8080/v3/api-docs/
+Esses pontos estão configurados para acesso público, permitindo que qualquer usuário visualize a estrutura e utilize as ferramentas de teste da API.
 
 - *Estrutura Principal*<br>
-  A classe Principal gerencia o sistema, exibindo o menu de opções e interagindo com o banco de dados e a API. Ela inclui:<br><br>
 
-  ENDERECO: URL da API para consulta de livros.<br>
-  ConsumoAPI: Classe que lida com o consumo de dados da API.<br>
-  ConverteDados: Classe para converter e processar dados JSON da API.<br>
-  LivroRepository e AutorRepository: Interfaces para acesso e manipulação dos dados no banco.<br>
+Controle de Segurança
 
+Utiliza filtros personalizados para autenticação via JWT, garantindo acesso seguro aos endpoints.
+Configuração de segurança que desabilita CSRF e aplica autenticação baseada em tokens.
+Modelo de Dados
 
+Tópicos: Cada tópico possui título, mensagem, data de criação, status padrão ("PENDENTE"), e um estado ativo (true por padrão).
+Respostas: Relacionadas a um tópico específico, também podem ser marcadas como inativas.
+Fluxo de Atualização e Exclusão
 
+Atualizações de tópicos são flexíveis e somente os campos enviados no corpo da requisição são alterados.
+Exclusão lógica de tópicos e respostas associadas para manter a integridade dos dados.
+Autenticação JWT
+
+Geração de tokens com validade de 2 horas, utilizando a biblioteca java-jwt.
+Validação dos tokens para identificar e autenticar o usuário em cada requisição.
 
 - *Requisitos*<br>
-  Java: JDK 11 ou superior <br>
-  Maven: Para gerenciamento de dependências<br>
-  Banco de Dados: (Especifique o banco usado, ex.: MySQL, PostgreSQL)<br>
-  API Gutendex: O sistema consome dados da API pública Gutendex (https://gutendex.com).<br>
+  Java 17+
+  Spring Boot 3.0+
+  MySQL ou outro banco de dados compatível.
+  Dependências Maven:
+  spring-boot-starter-data-jpa
+  spring-boot-starter-web
+  spring-boot-starter-security
+  java-jwt
+  spring-boot-starter-validation
 
 
 <h1 align="center"> Parceiros Educacionais</h1>

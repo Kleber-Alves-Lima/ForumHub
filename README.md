@@ -4,7 +4,7 @@ API REST - Fórum de Discussões
     <br />
     <br />
     <a href="Cadeado">
-      <img src="src/main/java/br/com/alura/Livros/Assets/ImagemSistema.png" alt="Imagem Ilustrando o Back-Endo do Sistema"  width="300" height="200">
+      <img src="src/main/java/br/com/alura/ForumHub/Domain/Assets/ForumHub.webp" alt="Imagem Ilustrando o Back-Endo do Sistema"  width="300" height="200">
      </a>
   </h1>
 </div>

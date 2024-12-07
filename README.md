@@ -23,16 +23,16 @@ Com endpoints organizados e funcionalidades práticas, o FórumHub é ideal para
 
 - *A API disponibiliza os seguintes recursos:*<br>
 
-  - *Autenticação*<br>
+  *Autenticação*<br>
     Post / Usuarios<br>
     Cria um novo usúario<br>
 
   -*POST /login* <br>
     Realiza a autenticação do usuário e retorna um token JWT para acesso aos recursos protegidos.<br>
 
-  -*Tópicos*
-  POST /topicos
-    Cria um novo tópico de discussão.
+  -*Tópicos*<br>
+    POST /topicos<br>
+    Cria um novo tópico de discussão.<br>
 
   GET /topicos<br>
     Lista todos os tópicos disponíveis.<br>
@@ -68,8 +68,8 @@ Esses pontos estão configurados para acesso público, permitindo que qualquer u
 
 Utiliza filtros personalizados para autenticação via JWT, garantindo acesso seguro aos endpoints.
 Configuração de segurança que desabilita CSRF e aplica autenticação baseada em tokens.
-Modelo de Dados
 
+-Modelo de Dados<br>
 Tópicos: Cada tópico possui título, mensagem, data de criação, status padrão ("PENDENTE"), e um estado ativo (true por padrão).
 Respostas: Relacionadas a um tópico específico, também podem ser marcadas como inativas.
 Fluxo de Atualização e Exclusão
